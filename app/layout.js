@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       <body>
         <CartProvider>
           <header className="fixed top-0 left-0 right-0 z-50 bg-grey shadow-md">
-            <div className="max-w-6x2 flex items-center justify-between mx-auto p-2 md:p-4">
+            <div className="max-w-6x2 flex items-center justify-between mx-auto p-4 md:p-4">
               <div className="flex items-center">
                 <Link href="/">
                   <div className="text-white font-semibold text-2xl md:text-3xl ml-0">
@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
                   <div className="hover:underline">Shopping</div>
                 </Link>
                 <Link href="/about">
-                  <div className="hover:underline">About</div>
+                  <div className="hover:underline">About  </div>
                 </Link>
 
                 <Link href="/cart">
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
                   </div>
                 </Link>
               </nav>
-              <div className="md:hidden">
+              <div className="md:hidden text-white">
                 <button onClick={toggleMenu} className="text-3xl">
                   {isOpen ? <FaTimes /> : <FaBars />}
                 </button>
@@ -53,6 +53,9 @@ export default function RootLayout({ children }) {
               <nav className="flex flex-col bg-alabaster md:hidden text-primary font-semibold text-lg py-4">
                 <Link href="/" className="py-2 text-center" onClick={toggleMenu}>
                   Home
+                </Link>
+                <Link href="/shop">
+                  <div className="py-2 text-center"onClick={toggleMenu}>Shopping</div>
                 </Link>
                 <Link href="/about" className="py-2 text-center" onClick={toggleMenu}>
                   About us
