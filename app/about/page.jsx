@@ -8,7 +8,6 @@ import Link from 'next/link';
 // Define your About component
 export default function About() {
   return (
-    <>
        <div className="bg-gradient-to-b from-[#827191] to-black h-screen flex flex-col  items-center">
       <div className="container mx-auto p-4 text-center">
         <h1 className="text-4xl font-bold text-white mb-8 mt-10">About Us</h1>
@@ -20,13 +19,12 @@ export default function About() {
           Subscribe to our Youtube Podcast Channel:  
           <br />
    
-          <a href="https://www.youtube.com/@Sarmaayapk" target="_blank" rel="noopener noreferrer">www.youtube.com/@Sarmaayapk</a>
+          <Link href="https://www.youtube.com/@Sarmaayapk" target="_blank" rel="noopener noreferrer">www.youtube.com/@Sarmaayapk</Link>
 
         </p>
       </div>
     </div>
        
-    </>
   )
 
 }

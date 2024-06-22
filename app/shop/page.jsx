@@ -56,10 +56,8 @@ const Home = () => {
           {products.map((product) => (
             <div key={product.id} className="border border-white p-4 rounded-lg shadow-md bg-white">
               <Link href={`/products/${product.id}`} legacyBehavior>
-                <a>
                   <h2 className="text-xl font-bold text-[#000]">{product.title}</h2>
                   <p className="text-[#000]">{product.description}</p>
-                </a>
               </Link>
               <AddToCartButton product={product} />
             </div>
