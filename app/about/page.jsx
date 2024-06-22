@@ -19,8 +19,7 @@ export default function About() {
           Subscribe to our Youtube Podcast Channel:  
           <br />
    
-          <Link href="https://www.youtube.com/@Sarmaayapk" target="_blank" rel="noopener noreferrer">www.youtube.com/@Sarmaayapk</Link>
-
+          <a href="https://www.youtube.com/@Sarmaayapk" target="_blank" rel="noopener noreferrer">www.youtube.com/@Sarmaayapk</a>
         </p>
       </div>
     </div>

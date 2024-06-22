@@ -21,6 +21,8 @@ const Home = () => {
   };
 
   return (
+    <>
+
     <div className="bg-gradient-to-b from-[#827191] to-black min-h-screen flex flex-col items-center">
       <div className="container mx-auto p-4 mt-16">
         <form className="flex items-center max-w-sm mx-auto mb-4">
@@ -55,16 +57,25 @@ const Home = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-3">
           {products.map((product) => (
             <div key={product.id} className="border border-white p-4 rounded-lg shadow-md bg-white">
+             
               <Link href={`/products/${product.id}`} legacyBehavior>
+              <a>
+
                   <h2 className="text-xl font-bold text-[#000]">{product.title}</h2>
                   <p className="text-[#000]">{product.description}</p>
+                  </a>
+
               </Link>
               <AddToCartButton product={product} />
+              
             </div>
+
           ))}
         </div>
       </div>
     </div>
+    </>
+
   );
 };
 
