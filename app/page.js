@@ -14,7 +14,7 @@ const Homepage = () => {
         <p className="text-lg font-bold text-[#000] mb-8">
           Start shopping now and discover great deals and discounts.
         </p>
-        <Link href="/shop">
+        <Link href="/shop" legacyBehavior>
           <button className="text-lg text-[#000] bg-purple-400 px-6 py-3 rounded-lg hover:bg-purple-500 hover:text-white transition duration-300">
             Shop Now
           </button>
